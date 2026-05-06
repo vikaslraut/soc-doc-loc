@@ -300,7 +300,7 @@ const Index = () => {
         <div className="grid md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-2 rounded-3xl bg-gradient-hero text-primary-foreground p-10 shadow-glow">
             <p className="text-sm uppercase tracking-widest text-primary-foreground/70">Per flat, per year</p>
-            <p className="mt-3 font-display text-6xl font-semibold">₹100</p>
+            <p className="mt-3 font-display text-6xl font-semibold">₹200</p>
             <p className="mt-4 text-primary-foreground/80 text-sm leading-relaxed">
               Inclusive of your society's own secure website, password-less login, and all registers listed above.
             </p>
@@ -334,7 +334,7 @@ const Index = () => {
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button variant="soft" size="xl" asChild>
-                <a href="mailto:hello@soc-doc-loc.in">
+                <a href="mailto:socdocloc@gmail.com">
                   <Mail className="h-4 w-4" /> Contact to onboard
                 </a>
               </Button>
@@ -369,7 +369,7 @@ const Index = () => {
             <p className="text-xs uppercase tracking-widest text-foreground/60 font-semibold mb-3">Company</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#security" className="hover:text-foreground transition-smooth">Security</a></li>
-              <li><a href="mailto:hello@soc-doc-loc.in" className="hover:text-foreground transition-smooth">Contact</a></li>
+              <li><a href="mailto:socdocloc@gmail.com" className="hover:text-foreground transition-smooth">Contact</a></li>
               <li><span>Privacy · Terms</span></li>
             </ul>
           </div>
