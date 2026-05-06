@@ -28,17 +28,17 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ vars.AWS_REGION }}
+          aws-region: ap-south-1
 
       - name: Sync assets (immutable cache)
         run: |
-          aws s3 sync dist/assets/ s3://${{ vars.S3_BUCKET }}/assets/ \
+          aws s3 sync dist/assets/ s3://socdocloc-website/assets/ \
             --cache-control "public,max-age=31536000,immutable" \
             --delete
 
       - name: Sync root files (no cache)
         run: |
-          aws s3 sync dist/ s3://${{ vars.S3_BUCKET }}/ \
+          aws s3 sync dist/ s3://socdocloc-website/ \
             --exclude "assets/*" \
             --cache-control "no-cache,no-store,must-revalidate" \
             --delete
