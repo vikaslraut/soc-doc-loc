@@ -99,7 +99,7 @@ const Index = () => {
             <a href="#pricing" className="hover:text-primary-foreground transition-smooth">Pricing</a>
           </nav>
           <Button variant="soft" size="sm" asChild>
-            <a href="#contact">Request access</a>
+            <a href="#contact">Request</a>
           </Button>
         </div>
       </header>
