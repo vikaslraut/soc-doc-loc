@@ -14,6 +14,7 @@ import {
   Building2,
   Leaf,
   ArrowRight,
+  Linkedin,
 } from "lucide-react";
 import heroImage from "@/assets/hero-vault.jpg";
 
@@ -376,8 +377,29 @@ const Index = () => {
         </div>
         <div className="border-t border-border">
           <div className="container max-w-6xl py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-            <p>© {new Date().getFullYear()} soc-doc-loc. All rights reserved.</p>
-            <p>Compliant with India's DPDP Act & GDPR.</p>
+            <p>
+              © {new Date().getFullYear()}  ·  RISEAUT CONSULTING —{"  "}
+              <a
+                href="https://riseaut.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-primary hover:text-primary/80 transition-smooth"
+              >
+                riseaut.com
+              </a>
+            </p>
+            <div className="flex items-center gap-3">
+              <p>Compliant with India's DPDP Act & GDPR.</p>
+              <a
+                href="https://www.linkedin.com/company/soc-doc-loc"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-muted-foreground hover:text-foreground transition-smooth"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
