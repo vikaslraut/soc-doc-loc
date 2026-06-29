@@ -161,6 +161,85 @@ const Index = () => {
             committees to come.
           </p>
         </div>
+
+        {/* YouTube videos — side by side */}
+        <div className="mt-12 grid md:grid-cols-2 gap-8">
+          {/* Video 1 — For Housing Societies */}
+          <div className="group flex flex-col gap-4">
+            {/* Audience tag + title */}
+            <div>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-semibold text-primary uppercase tracking-wider">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                For Housing Societies &amp; RWAs
+              </span>
+              <h3 className="mt-3 font-display text-xl font-semibold text-foreground leading-snug">
+                See how your society's records<br className="hidden sm:block" /> get digitised
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                A guided demo of the member portal, registers and audit trail — built for office bearers and MC members.
+              </p>
+            </div>
+            {/* iframe */}
+            <div className="overflow-hidden rounded-xl border border-border shadow-soft group-hover:shadow-glow transition-smooth">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/th56jdG5jRE?rel=0&modestbranding=1"
+                  title="soc-doc-loc demo for housing societies and RWAs"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=th56jdG5jRE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-start text-xs text-muted-foreground hover:text-primary transition-smooth flex items-center gap-1"
+            >
+              Watch on YouTube ↗
+            </a>
+          </div>
+
+          {/* Video 2 — For Builders */}
+          <div className="group flex flex-col gap-4">
+            {/* Audience tag + title */}
+            <div>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-semibold text-amber-700 dark:text-amber-400 uppercase tracking-wider">
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+                For Builders &amp; Developers
+              </span>
+              <h3 className="mt-3 font-display text-xl font-semibold text-foreground leading-snug">
+                Onboard your new project's<br className="hidden sm:block" /> residents from day one
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                How builders and developers can hand over a fully configured soc-doc-loc locker alongside possession of the property.
+              </p>
+            </div>
+            {/* iframe */}
+            <div className="overflow-hidden rounded-xl border border-border shadow-soft group-hover:shadow-glow transition-smooth">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/YM7kL-mTvPY?rel=0&modestbranding=1"
+                  title="soc-doc-loc demo for builders and developers"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=YM7kL-mTvPY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-start text-xs text-muted-foreground hover:text-primary transition-smooth flex items-center gap-1"
+            >
+              Watch on YouTube ↗
+            </a>
+          </div>
+        </div>
       </Section>
 
       {/* PANEL 3 */}
