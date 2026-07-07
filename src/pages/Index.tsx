@@ -98,6 +98,7 @@ const Index = () => {
             <a href="#security" className="hover:text-primary-foreground transition-smooth">Security</a>
             <a href="#registers" className="hover:text-primary-foreground transition-smooth">What we maintain</a>
             <a href="#pricing" className="hover:text-primary-foreground transition-smooth">Pricing</a>
+            <a href="https://socdocloc.wordpress.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-smooth">Blog</a>
           </nav>
           <Button variant="soft" size="sm" asChild>
             <a href="#contact">Request access</a>
@@ -449,6 +450,7 @@ const Index = () => {
             <p className="text-xs uppercase tracking-widest text-foreground/60 font-semibold mb-3">Company</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#security" className="hover:text-foreground transition-smooth">Security</a></li>
+              <li><a href="https://socdocloc.wordpress.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-smooth">Blog</a></li>
               <li><a href="mailto:socdocloc@gmail.com" className="hover:text-foreground transition-smooth">Contact</a></li>
               <li><span>Privacy · Terms</span></li>
             </ul>
