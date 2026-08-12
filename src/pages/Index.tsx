@@ -19,6 +19,11 @@ import {
 import heroImage from "@/assets/hero-vault.jpg";
 import heroVideo from "@/assets/hero-demo.mp4";
 import HeroMediaCard from "@/components/HeroMediaCard";
+import YouTubePlayer from "@/components/YouTubePlayer";
+import { useState } from "react";
+
+const SOCIETY_VIDEO = "th56jdG5jRE";
+const BUILDER_VIDEO = "YM7kL-mTvPY";
 
 const Section = ({
   id,
@@ -84,6 +89,9 @@ const registers = [
 ];
 
 const Index = () => {
+  // Only one demo player is mounted at a time — starting one stops the other.
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   return (
     <div className="min-h-screen bg-background">
       {/* NAV */}
@@ -179,18 +187,14 @@ const Index = () => {
                 A guided demo of the member portal, registers and audit trail — built for office bearers and MC members.
               </p>
             </div>
-            {/* iframe */}
+            {/* player */}
             <div className="overflow-hidden rounded-xl border border-border shadow-soft group-hover:shadow-glow transition-smooth">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  src="https://www.youtube.com/embed/th56jdG5jRE?rel=0&modestbranding=1"
-                  title="soc-doc-loc demo for housing societies and RWAs"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="absolute inset-0 h-full w-full"
-                  loading="lazy"
-                />
-              </div>
+              <YouTubePlayer
+                videoId={SOCIETY_VIDEO}
+                title="soc-doc-loc demo for housing societies and RWAs"
+                active={activeVideo === SOCIETY_VIDEO}
+                onActivate={() => setActiveVideo(SOCIETY_VIDEO)}
+              />
             </div>
             <a
               href="https://www.youtube.com/watch?v=th56jdG5jRE"
@@ -217,18 +221,14 @@ const Index = () => {
                 How builders and developers can hand over a fully configured soc-doc-loc locker alongside possession of the property.
               </p>
             </div>
-            {/* iframe */}
+            {/* player */}
             <div className="overflow-hidden rounded-xl border border-border shadow-soft group-hover:shadow-glow transition-smooth">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  src="https://www.youtube.com/embed/YM7kL-mTvPY?rel=0&modestbranding=1"
-                  title="soc-doc-loc demo for builders and developers"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="absolute inset-0 h-full w-full"
-                  loading="lazy"
-                />
-              </div>
+              <YouTubePlayer
+                videoId={BUILDER_VIDEO}
+                title="soc-doc-loc demo for builders and developers"
+                active={activeVideo === BUILDER_VIDEO}
+                onActivate={() => setActiveVideo(BUILDER_VIDEO)}
+              />
             </div>
             <a
               href="https://www.youtube.com/watch?v=YM7kL-mTvPY"
