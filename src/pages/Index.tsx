@@ -17,6 +17,8 @@ import {
   Linkedin,
 } from "lucide-react";
 import heroImage from "@/assets/hero-vault.jpg";
+import heroVideo from "@/assets/hero-demo.mp4";
+import HeroMediaCard from "@/components/HeroMediaCard";
 
 const Section = ({
   id,
@@ -132,14 +134,11 @@ const Index = () => {
               </p>
             </div>
           </div>
-          <div className="relative md:justify-self-end">
-            <div className="absolute -inset-6 rounded-[2rem] bg-primary-foreground/10 blur-2xl" />
-            <img
-              src={heroImage}
+          <div className="md:justify-self-end w-full">
+            <HeroMediaCard
+              image={heroImage}
+              video={heroVideo}
               alt="Secure digital vault for housing society documents"
-              width={1280}
-              height={960}
-              className="relative rounded-[1.5rem] shadow-glow w-full max-w-lg animate-float"
             />
           </div>
         </div>
