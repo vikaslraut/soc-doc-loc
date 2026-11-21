@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>soc-doc-loc for housing societies — every feature, in detail</title>
+  <meta name="description" content="How soc-doc-loc helps Maharashtra co-operative housing societies keep every statutory register current and audit-ready: flats, ownership, members, Form I and J, shares, nominations, meetings, tenants, investments, website and a tamper-proof audit log.">
+  <meta name="theme-color" content="#123826">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css?v=3">
+</head>
+<body>
+
+<header class="site-header site-header--dark">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="soc-doc-loc home"><span class="brand-mark"><i data-lucide="lock-keyhole"></i></span>soc-doc-loc</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i data-lucide="menu"></i></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="housing-societies.html" class="is-current" aria-current="page">For housing societies</a>
+      <a href="builders.html">For builders</a>
+      <a href="index.html#demos">Demos</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="https://socdocloc.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+      <a class="btn btn--primary" href="#contact">Request access</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid hero-grid--page">
+      <div>
+        <span class="hero-pill reveal"><b>CHS &amp; RWA</b> For office bearers, members and auditors</span>
+        <h1 class="reveal" style="--d:.05s">Your society's legal memory, <em>kept safe for every committee.</em></h1>
+        <p class="lede reveal" style="--d:.1s">Every register the MCS Act and the model bye-laws ask your society to keep, in one secure place. Always current, and ready to print the moment your auditor asks for it.</p>
+        <div class="btn-row reveal" style="--d:.15s">
+          <a class="btn btn--light" href="https://www.youtube.com/watch?v=th56jdG5jRE&amp;t=9s" target="_blank" rel="noopener"><i data-lucide="play"></i>Watch the society demo</a>
+          <a class="btn btn--ghost-dark" href="#contact">Onboard your society <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="hero-stats reveal" style="--d:.2s">
+          <div><b data-count="14">14</b><span>features covered below</span></div>
+          <div><b data-count="25">25</b><span>statutory checks on every flat</span></div>
+          <div><b>₹200</b><span>per flat, per year</span></div>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.15s">
+        <div class="mock" style="max-width:440px;margin-left:auto">
+          <div class="mock-bar"><i></i><i></i><i></i><span>Dashboard · Society Compliance Health</span></div>
+          <div class="mock-kpis">
+            <div><b>60</b><span>Flats</span></div>
+            <div><b>107</b><span>Members</span></div>
+            <div><b>13</b><span>Meetings this year</span></div>
+          </div>
+          <div class="bars">
+            <div class="bar"><span>Gold</span><span class="track"><span class="fill gold" style="--w:62%"></span></span><b>37</b></div>
+            <div class="bar"><span>Silver</span><span class="track"><span class="fill silver" style="--w:25%"></span></span><b>15</b></div>
+            <div class="bar"><span>Bronze</span><span class="track"><span class="fill bronze" style="--w:10%"></span></span><b>6</b></div>
+            <div class="bar"><span>Poor</span><span class="track"><span class="fill poor" style="--w:4%"></span></span><b>2</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container feature-layout">
+    <aside class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#dashboard">Compliance dashboard</a></li>
+        <li><a href="#flats">Flats register</a></li>
+        <li><a href="#ownership">Chain of ownership</a></li>
+        <li><a href="#vault">Flat document vault</a></li>
+        <li><a href="#scorecard">Data scorecard</a></li>
+        <li><a href="#members">Members &amp; owner portal</a></li>
+        <li><a href="#forms">Form I &amp; Form J</a></li>
+        <li><a href="#shares">Share register &amp; ledger</a></li>
+        <li><a href="#nominations">Nominations</a></li>
+        <li><a href="#meetings">Proceeding book</a></li>
+        <li><a href="#tenants">Tenants register</a></li>
+        <li><a href="#investments">Investments &amp; committee</a></li>
+        <li><a href="#website">Documents, notices &amp; website</a></li>
+        <li><a href="#audit">Audit trail &amp; security</a></li>
+      </ol>
+      <div class="toc-progress" aria-hidden="true"><span></span></div>
+      <div class="toc-cta"><a class="btn btn--primary" href="#contact"><i data-lucide="mail"></i>Request access</a></div>
+    </aside>
+
+    <div class="panes">
+
+      <!-- 01 -->
+      <section class="pane reveal" id="dashboard">
+        <span class="pane-num" aria-hidden="true">01</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="gauge"></i></span><div><span class="kicker">See it at a glance</span><h2>A compliance dashboard no paper register can give you</h2></div></div>
+          <p>When you sign in you see your society's name and registration number as they appear on record, then the numbers that matter: flats, members, meetings. Below that, the <strong>Society Compliance Health</strong> chart scores every flat against the statutory requirements as Gold, Silver, Bronze or Poor, based on how many checks are still pending.</p>
+          <div class="points">
+            <div class="point"><h4>No surprises at audit</h4><p>Find the gaps today and fix them through the year.</p></div>
+            <div class="point"><h4>Meeting cadence checked</h4><p>At least 1 AGM and 12 managing committee meetings in each financial year.</p></div>
+            <div class="point"><h4>Duties written down</h4><p>The admin's powers and duties under the Act are on the dashboard, so a newly elected secretary knows from day one what they are responsible for.</p></div>
+            <div class="point"><h4>Compliance reminders</h4><p>Reminders go to every owner by email, and the ones with no email address on record are named.</p></div>
+          </div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Meeting cadence · FY 2025-26</span></div>
+            <div class="mock-row"><span>Annual General Meeting</span><span class="r ok"><i data-lucide="circle-check"></i>1 of 1</span></div>
+            <div class="mock-row"><span>Managing Committee meetings</span><span class="r ok"><i data-lucide="circle-check"></i>12 of 12</span></div>
+            <div class="mock-row"><span>Special General Body</span><span class="r"><span class="pill grey">Optional</span></span></div>
+            <div class="mock-row"><span>Flats needing attention</span><span class="r warn"><i data-lucide="triangle-alert"></i>8 flats</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="pane reveal" id="flats">
+        <span class="pane-num" aria-hidden="true">02</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="building-2"></i></span><div><span class="kicker">The heart of it</span><h2>Every flat in one list, with a scorecard on each</h2></div></div>
+          <p>Wing, flat number, floor, Index II area, share certificate number and a readiness score for each flat: "2 items pending", "9 items pending", "all done". Search it, filter it by wing or status, and the filters are still there when you come back.</p>
+          <p>Ask yourselves: if your accountant left tomorrow, would the next person know which flats are missing a share certificate, or which transfers were never completed? With soc-doc-loc, it no longer matters who sits in the office. The system knows.</p>
+          <div class="points">
+            <div class="point"><h4>Excel import</h4><p>Start fresh painlessly by importing your existing flats straight from an Excel sheet.</p></div>
+            <div class="point"><h4>Parking</h4><p>Parking allotments and serials are recorded against each flat.</p></div>
+            <div class="point"><h4>Flat templates</h4><p>Set up a large society quickly with templates such as 1BHK and 2BHK.</p></div>
+          </div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Flats · 60</span></div>
+            <div class="mock-scroll">
+              <table class="mock-table">
+                <thead><tr><th>Flat</th><th>Floor</th><th>Area</th><th>Share cert.</th><th>Scorecard</th></tr></thead>
+                <tbody>
+                  <tr><td>A-101</td><td>1</td><td>652 sq ft</td><td>SC-001</td><td><span class="pill gold">All done</span></td></tr>
+                  <tr><td>A-102</td><td>1</td><td>652 sq ft</td><td>SC-002</td><td><span class="pill silver">2 pending</span></td></tr>
+                  <tr><td>A-201</td><td>2</td><td>910 sq ft</td><td>—</td><td><span class="pill poor">9 pending</span></td></tr>
+                  <tr><td>B-104</td><td>1</td><td>910 sq ft</td><td>SC-034</td><td><span class="pill bronze">5 pending</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="pane reveal" id="ownership">
+        <span class="pane-num" aria-hidden="true">03</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="git-commit-vertical"></i></span><div><span class="kicker">Who owns what, since when</span><h2>Chain of ownership, preserved across every resale</h2></div></div>
+          <p>Open a flat and its Index II is right there: document number, registration date, market value, sale value, stamp duty, registration fee and share capital, with the owner and co-owners named on the deed.</p>
+          <p>When a flat is resold, nothing is erased or overwritten. The new owner appears on top, and the previous owner stays below, marked <strong>ceased</strong> on the transfer date. A committee five years from now won't have to piece together who owned which flat from handwritten ledgers.</p>
+          <div><span class="law"><i data-lucide="scale"></i>Index II · Registration Act</span><span class="law"><i data-lucide="scale"></i>MCS Rules 1961</span></div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Flat B-204 · Chain of ownership</span></div>
+            <div class="chain">
+              <div class="link"><b>Index II #4417/2023 · current</b><small>R. KULKARNI &amp; S. KULKARNI · stamp duty 6.0% ✓</small></div>
+              <div class="link ceased"><b>Index II #2109/2019 · ceased 14-Mar-2023</b><small>A. DESHPANDE · transferred</small></div>
+              <div class="link ceased"><b>Index II #0871/2016 · original allotment</b><small>From the builder · first sale</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="pane reveal" id="vault">
+        <span class="pane-num" aria-hidden="true">04</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="folder-lock"></i></span><div><span class="kicker">No more drawers</span><h2>A document folder for every flat, with notes the next committee will see</h2></div></div>
+          <p>Possession letter, parking allotment, KYC, NOC, loan documents and the deed, all tagged to the flat they belong to. These are faithful scans of what you already hold: handwritten, signed and stamped, exactly as issued. Paper fades and pages tear, but the scan will look the same in twenty years.</p>
+          <p>Each flat also carries a <strong>notes thread</strong>. "Society transfer forms not filled" is the kind of loose end that gets forgotten when an office bearer steps down. Here it stays on the flat, in writing, until someone deals with it.</p>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Flat B-204 · Documents</span></div>
+            <div class="doc-grid">
+              <div class="doc-tile"><i data-lucide="file-key"></i>Possession letter</div>
+              <div class="doc-tile"><i data-lucide="car"></i>Parking letter</div>
+              <div class="doc-tile"><i data-lucide="id-card"></i>KYC</div>
+              <div class="doc-tile"><i data-lucide="landmark"></i>Loan NOC</div>
+              <div class="doc-tile"><i data-lucide="file-badge"></i>Share certificate</div>
+              <div class="doc-tile"><i data-lucide="stamp"></i>Index II</div>
+            </div>
+            <div class="note"><i data-lucide="sticky-note"></i><span><strong>Note · Secretary:</strong> Society transfer forms not filled. Follow up with new owner.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="pane reveal" id="scorecard">
+        <span class="pane-num" aria-hidden="true">05</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="list-checks"></i></span><div><span class="kicker">The system does the homework</span><h2>25 statutory checks per flat, run for you all the time</h2></div></div>
+          <p>Is the Index II on file? Is the sale value within 25% of market value? Is stamp duty at least 6%? Is the share certificate recorded and its scan attached? Are the possession letter, parking letter and KYC on file? Is there a nomination for every member? The <strong>Data Scorecard</strong> checks all of it automatically and points straight at what's missing.</p>
+          <p>Members see their own flat's scorecard when they sign in, along with clear instructions on what to send to the society office. Members close their own gaps, so your committee no longer has to chase a hundred people for paperwork.</p>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Data Scorecard · Flat A-102</span></div>
+            <div class="progress-ring">
+              <svg viewBox="0 0 80 80" aria-hidden="true"><circle class="bg" cx="40" cy="40" r="32"/><circle class="fg" cx="40" cy="40" r="32" style="--off:16"/></svg>
+              <div><b>23 / 25</b><span>checks passed · <span class="pill gold">Gold</span></span></div>
+            </div>
+            <div class="mock-row"><span>Index II on file</span><span class="r ok"><i data-lucide="circle-check"></i>Yes</span></div>
+            <div class="mock-row"><span>Stamp duty ≥ 6%</span><span class="r ok"><i data-lucide="circle-check"></i>6.0%</span></div>
+            <div class="mock-row"><span>Nomination: member 1</span><span class="r bad"><i data-lucide="circle-x"></i>Not filed</span></div>
+            <div class="mock-row"><span>Nomination: member 2</span><span class="r bad"><i data-lucide="circle-x"></i>Not filed</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="pane reveal" id="members">
+        <span class="pane-num" aria-hidden="true">06</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="users"></i></span><div><span class="kicker">One person, one record</span><h2>A clean member register and a portal for every owner</h2></div></div>
+          <p>Every member, active and ceased, is in one list you can search by name, flat or wing. It shows owner and co-owners, member class, contact details and when each person last signed in. That one list is the source for every official register.</p>
+          <div class="points">
+            <div class="point"><h4>One record per person</h4><p>Fix a phone number or a misspelt name once and it's correct everywhere: Form I, Form J, the share register and the rest.</p></div>
+            <div class="point"><h4>Every edit needs a reason</h4><p>The reason is recorded with the change, for good.</p></div>
+            <div class="point"><h4>Owner portal</h4><p>Members sign in with an email code to see their flat, their documents and what's pending.</p></div>
+            <div class="point"><h4>Approvals</h4><p>Owner registrations and changes wait for an admin to approve them before they reach the registers.</p></div>
+          </div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Members · 112</span></div>
+            <div class="mock-row"><span><strong>PRIYA NAIR</strong> · A-101 · Owner</span><span class="pill">Active</span></div>
+            <div class="mock-row"><span><strong>RAHUL NAIR</strong> · A-101 · Co-owner</span><span class="pill">Active</span></div>
+            <div class="mock-row"><span><strong>S. JOSHI</strong> · A-104, B-301 · Owner</span><span class="pill">2 flats</span></div>
+            <div class="mock-row"><span><strong>A. DESHPANDE</strong> · B-204</span><span class="pill grey">Ceased</span></div>
+            <div class="note" style="background:var(--green-50);border-color:var(--green-200);color:var(--green-900)"><i data-lucide="info" style="color:var(--green-600)"></i><span>Changes apply to every flat this person is on. A reason is required.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 -->
+      <section class="pane reveal" id="forms">
+        <span class="pane-num" aria-hidden="true">07</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="book-user"></i></span><div><span class="kicker">Generated, not typed</span><h2>Form I and Form J, built from your data and one click to PDF</h2></div></div>
+          <p><strong>Form I, the Register of Members</strong> (Rule 32), is built from your member data, with share certificate details and the full share transfer history. One click turns it into the official print-ready PDF. A register of 135 pages takes seconds, where preparing it by hand before an audit takes days.</p>
+          <p><strong>Form J, the List of Members</strong> (Rule 33), shows active members only, with address, class and flat. Nothing is kept separately. It comes from the same data, so there is never a question of which copy is the latest.</p>
+          <div><span class="law"><i data-lucide="scale"></i>MCS Rules 1961 · Rule 32</span><span class="law"><i data-lucide="scale"></i>Rule 33</span><span class="law"><i data-lucide="printer"></i>Print &amp; sign PDF</span></div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Form I · Register of Members</span></div>
+            <div class="mock-scroll">
+              <table class="mock-table">
+                <thead><tr><th>Sr</th><th>Member</th><th>Flat</th><th>Shares</th><th>Admitted</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>PRIYA NAIR</td><td>A-101</td><td>1–5</td><td>12-Jan-2016</td></tr>
+                  <tr><td>2</td><td>RAHUL NAIR</td><td>A-101</td><td>joint</td><td>12-Jan-2016</td></tr>
+                  <tr><td>3</td><td>S. JOSHI</td><td>A-104</td><td>16–20</td><td>02-Feb-2016</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-row" style="margin-top:12px"><span class="pill"><i data-lucide="file-down" style="width:13px;height:13px"></i>Export PDF · 135 pages</span><span class="pill grey">Form J · active only</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 -->
+      <section class="pane reveal" id="shares">
+        <span class="pane-num" aria-hidden="true">08</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="file-badge"></i></span><div><span class="kicker">The register auditors check hardest</span><h2>Share register and share ledger that check themselves</h2></div></div>
+          <p>The <strong>Share Register</strong> (Bye-law 14, Rule 60) shows flat, certificate number, share serials, value, member and joint holders. It also tells you which certificates have been scanned and uploaded, and which are still missing, so you can see the gaps and close them one by one.</p>
+          <p>The <strong>Share Ledger</strong> (Bye-law 9, Rule 65) is the full history: every holding and transfer, current and ceased, with capital collected and returned and the net balance the society holds.</p>
+          <div><span class="law"><i data-lucide="scale"></i>Bye-law 9 · 14</span><span class="law"><i data-lucide="scale"></i>MCS Rules 60 · 65</span></div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Share Register · 60 entries</span></div>
+            <div class="progress-ring">
+              <svg viewBox="0 0 80 80" aria-hidden="true"><circle class="bg" cx="40" cy="40" r="32"/><circle class="fg" cx="40" cy="40" r="32" style="--off:23"/></svg>
+              <div><b>53 / 60</b><span>certificate scans uploaded</span></div>
+            </div>
+            <div class="mock-row"><span>SC-041 · B-201 · shares 201–205</span><span class="r bad"><i data-lucide="image-off"></i>Scan missing</span></div>
+            <div class="mock-row"><span>Ledger balance held by society</span><span class="r ok">₹30,000</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 -->
+      <section class="pane reveal" id="nominations">
+        <span class="pane-num" aria-hidden="true">09</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="heart-handshake"></i></span><div><span class="kicker">The register that protects families</span><h2>Nominations that add up, and stay on record</h2></div></div>
+          <p>Nominations are among the most sensitive registers a society keeps, and among the most neglected. Record the nomination date, the date the managing committee admitted it, each nominee's details and relationship, and their share. The system <strong>insists the shares total 100%</strong>, as the bye-law requires.</p>
+          <p>The signed <strong>Appendix-14 form</strong> (Bye-law 31) is attached to the record. The Nomination Register (Model Bye-laws 25 to 27) shows every nomination at a glance, <strong>flags minor nominees</strong> and prints in the format auditors expect, including revocations.</p>
+          <div class="pane-quote">When a member passes away and the nomination is missing or wrong, families can be torn apart and the society can be caught up in disputes for years. Keeping this register accurate protects members' families.</div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Revise nomination · Flat A-101</span></div>
+            <div class="mock-row"><span>MEERA NAIR · Daughter</span><span class="r">50%</span></div>
+            <div class="mock-row"><span>ARJUN NAIR · Son <span class="pill bronze">Minor</span></span><span class="r">50%</span></div>
+            <div class="mock-row" style="background:var(--green-50)"><span><strong>Total</strong></span><span class="r ok"><i data-lucide="circle-check"></i>100%</span></div>
+            <div class="note" style="background:var(--green-50);border-color:var(--green-200);color:var(--green-900)"><i data-lucide="history" style="color:var(--green-600)"></i><span>Every change is captured in the audit log with a reason.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="pane reveal" id="meetings">
+        <span class="pane-num" aria-hidden="true">10</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="calendar-check"></i></span><div><span class="kicker">Hold it, minute it, prove it</span><h2>A proceeding book for AGM, SGM and committee meetings</h2></div></div>
+          <p>Record each meeting with its date, venue, chairperson, quorum, member attendance, non-member attendees and authorities present, resolutions with proposer and seconder, running notes and the <strong>scanned, signed minutes</strong>. The register is batched by financial year with page numbers, and prints as a statutory Proceeding Book.</p>
+          <p>The bye-laws require these meetings to be held and minuted for a society to stay Class A. Here the count is tracked automatically, so a missed meeting or unsigned minutes cannot slip by unnoticed.</p>
+          <div><span class="law"><i data-lucide="scale"></i>Model Bye-laws · meetings</span><span class="law"><i data-lucide="calendar"></i>1 AGM + 12 MC per year</span></div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Proceeding Book · FY 2025-26</span></div>
+            <div class="mock-row"><span><span class="pill">AGM</span> 28-Sep-2025 · Clubhouse</span><span class="r ok"><i data-lucide="circle-check"></i>Quorum</span></div>
+            <div class="mock-row"><span><span class="pill grey">MC</span> 05-Oct-2025 · 6 resolutions</span><span class="r ok"><i data-lucide="file-signature"></i>Signed</span></div>
+            <div class="mock-row"><span><span class="pill grey">MC</span> 09-Nov-2025 · 3 resolutions</span><span class="r warn"><i data-lucide="clock"></i>Minutes pending</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 -->
+      <section class="pane reveal" id="tenants">
+        <span class="pane-num" aria-hidden="true">11</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="key-round"></i></span><div><span class="kicker">Rented flats, on record</span><h2>A tenants register for every leave &amp; licence agreement</h2></div></div>
+          <p>When an owner lets out a flat, the society should know about it. Record each leave &amp; licence agreement with the licensor and licensees, KYC, the agreement period, registration status and the deposit. Every flat's tenancy history stays on record for the auditor to inspect.</p>
+          <div class="points">
+            <div class="point"><h4>Gaps flagged</h4><p>Unregistered agreements and missing KYC are flagged, not buried.</p></div>
+            <div class="point"><h4>Owners take part</h4><p>Owners can add and see their own tenancies from their portal.</p></div>
+            <div class="point"><h4>Bulk import</h4><p>Import existing tenancies from Excel to catch up on past records quickly.</p></div>
+          </div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Tenants · 9 active</span></div>
+            <div class="mock-row"><span>C-302 · K. IYER · 11 months</span><span class="r ok"><i data-lucide="circle-check"></i>Registered</span></div>
+            <div class="mock-row"><span>A-404 · M. SHAH · 11 months</span><span class="r warn"><i data-lucide="triangle-alert"></i>KYC pending</span></div>
+            <div class="mock-row"><span>B-108 · R. PATIL · ends 31-Dec</span><span class="r bad"><i data-lucide="circle-x"></i>Not registered</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12 -->
+      <section class="pane reveal" id="investments">
+        <span class="pane-num" aria-hidden="true">12</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="piggy-bank"></i></span><div><span class="kicker">Funds and the people who run them</span><h2>Investment register and managing committee register</h2></div></div>
+          <p>Model Bye-law 140(8) lists the <strong>Investment Register</strong> among the books a society must keep, and investing funds without the general body's permission is an offence. Track every FD and instrument: bank, folio, rate, maturity, interest earned each year, TDS deducted, and what was realised. Sinking fund, repair fund and surplus are all visible in one place.</p>
+          <p>The <strong>managing committee register</strong> records who held office, in which role and for which term, so the society's leadership history is never in doubt after an election.</p>
+          <div><span class="law"><i data-lucide="scale"></i>Bye-law 15 · 140(8)</span><span class="law"><i data-lucide="scale"></i>MCS Act S.70</span></div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Investments · 4 instruments</span></div>
+            <div class="mock-scroll">
+              <table class="mock-table">
+                <thead><tr><th>Bank</th><th>Fund</th><th>Rate</th><th>Matures</th></tr></thead>
+                <tbody>
+                  <tr><td>Co-op Bank</td><td>Sinking</td><td>7.25%</td><td>Mar 2027</td></tr>
+                  <tr><td>Nationalised</td><td>Repair</td><td>6.90%</td><td>Aug 2026</td></tr>
+                  <tr><td>Co-op Bank</td><td>Surplus</td><td>7.10%</td><td>Jan 2028</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 13 -->
+      <section class="pane reveal" id="website">
+        <span class="pane-num" aria-hidden="true">13</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="globe"></i></span><div><span class="kicker">One search away</span><h2>Society documents, a notice board and your own public website</h2></div></div>
+          <p><strong>Society documents:</strong> the registration certificate, adopted bye-laws, occupation certificate, standard buyer and seller forms and the nomination form. Every committee needs these and can rarely find them. Members can view and download them themselves, so fewer questions land on your office.</p>
+          <p><strong>Notice board:</strong> post AGM notices and circulars where every member can read them.</p>
+          <p><strong>Your society website:</strong> a public site at your own address for your bye-laws, rules, committee, contact details, office hours and the documents buyers and tenants ask for. Admins edit it with simple pages up to three menu levels deep, plus attachments and your logo. It's a better home for this than WhatsApp forwards.</p>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>greenmeadows.socdocloc.com</span></div>
+            <div style="background:linear-gradient(140deg,var(--green-800),var(--green-600));border-radius:12px;color:#fff;padding:16px;margin-bottom:10px">
+              <b style="font-family:var(--font-display);font-size:1.1rem">GREEN MEADOWS CHS</b>
+              <div style="font-size:.78rem;opacity:.85">A friendly home for 148 families · Office Mon–Fri 6–8 pm</div>
+            </div>
+            <div class="doc-grid">
+              <div class="doc-tile"><i data-lucide="book-open"></i>Bye-laws &amp; rules</div>
+              <div class="doc-tile"><i data-lucide="users-round"></i>Committee</div>
+              <div class="doc-tile"><i data-lucide="megaphone"></i>Notices</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 14 -->
+      <section class="pane reveal" id="audit">
+        <span class="pane-num" aria-hidden="true">14</span>
+        <div class="pane-body">
+          <div class="pane-head"><span class="icon-tile"><i data-lucide="history"></i></span><div><span class="kicker">Trust, built in</span><h2>Every change traced. Tamper-proof, and safe through every election.</h2></div></div>
+          <p>Every change is recorded: what changed, who changed it, when and why. The log is <strong>read-only</strong>, and nobody can edit or erase it, not even an admin. A <strong>hash chain</strong> proves the record has not been altered. Questions like "who changed that figure?" or "what did the last committee do?" have a clear answer.</p>
+          <div class="points">
+            <div class="point"><h4>Year-on-year audit</h4><p>The auditor sees which flats changed since the last audit and checks only those.</p></div>
+            <div class="point"><h4>Committee handover</h4><p>New office bearers inherit the data along with the full, honest history of how it got there.</p></div>
+            <div class="point"><h4>Locked by default</h4><p>A separate database for each society, identity details masked on the server, no bulk export, and data kept in India.</p></div>
+          </div>
+        </div>
+        <div class="pane-visual">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>Audit Log · read-only</span></div>
+            <div class="mock-row"><span>Nomination revised · A-101 · Secretary</span><span class="hash">#9f3a…</span></div>
+            <div class="mock-row"><span>Phone corrected · S. JOSHI · Admin</span><span class="hash">#41c0…</span></div>
+            <div class="mock-row"><span>Share scan uploaded · B-201</span><span class="hash">#7be2…</span></div>
+            <div class="mock-row" style="background:var(--green-50)"><span><strong>Hash chain verified</strong></span><span class="r ok"><i data-lucide="shield-check"></i>Intact</span></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="container page-end" id="contact">
+    <div class="cta reveal">
+      <span class="leaf l1"><i data-lucide="leaf"></i></span>
+      <span class="leaf l2"><i data-lucide="leaf"></i></span>
+      <span class="eyebrow" style="color:var(--mint)"><i data-lucide="indian-rupee"></i>₹200 per flat, per year · onboarding free</span>
+      <h2>Bring your society's registers home.</h2>
+      <p>We set up your society's secure locker, train your committee and move your existing records across. For less than the price of a cup of tea a month per flat, your society's records are protected for this committee and every one after it.</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="mailto:socdocloc@gmail.com?subject=Onboard%20our%20housing%20society%20to%20soc-doc-loc"><i data-lucide="mail"></i>Email us</a>
+        <a class="btn btn--wa" href="https://wa.me/919545524246" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp</a>
+        <a class="btn btn--ghost-dark" href="index.html#pricing">See pricing <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="contact-lines">
+        <a href="mailto:socdocloc@gmail.com"><i data-lucide="mail"></i>socdocloc@gmail.com</a>
+        <a href="tel:+919545524246"><i data-lucide="phone"></i>+91-9545524246</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"><i data-lucide="lock-keyhole"></i></span>soc-doc-loc</a>
+        <p>A secure data and document repository for co-operative housing societies and resident welfare associations in Maharashtra.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="housing-societies.html">For housing societies</a></li>
+          <li><a href="builders.html">For builders</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#security">Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=th56jdG5jRE&amp;t=9s" target="_blank" rel="noopener"><i data-lucide="youtube"></i>Society demo</a></li>
+          <li><a href="https://www.youtube.com/watch?v=YM7kL-mTvPY" target="_blank" rel="noopener"><i data-lucide="youtube"></i>Builder demo</a></li>
+          <li><a href="https://socdocloc.wordpress.com/" target="_blank" rel="noopener"><i data-lucide="newspaper"></i>Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:socdocloc@gmail.com"><i data-lucide="mail"></i>socdocloc@gmail.com</a></li>
+          <li><a href="tel:+919545524246"><i data-lucide="phone"></i>+91-9545524246</a></li>
+          <li><a href="https://wa.me/919545524246" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> · Riseaut Consulting — <a href="https://riseaut.com" target="_blank" rel="noopener">riseaut.com</a></span>
+      <span>Compliant with India's DPDP Act &amp; GDPR</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="assets/js/site.js?v=3"></script>
+</body>
+</html>
